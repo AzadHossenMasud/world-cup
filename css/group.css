@@ -60,6 +60,7 @@ header {
 }
 
 .banner-img img {
+    height: 600px;
     width: 80%;
     animation-duration: 8s;
     animation-name: slidein;
@@ -129,53 +130,56 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #4b0505;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
-.item img {
-    width: 100%;
-}
-
-.item-details {
-    padding: 20px;
-}
-
-.item-btn {
-    display: block;
-    padding: 3px 20px;
-    border-radius: 5px;
-    border: 1px solid #161616;
-    color: #161616;
-
-
+    border-radius: 10px;
 }
 
 .item-title {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.item ul {
+    margin-top: 0;
+}
+
+.item li {
+    list-style: none;
+
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
     font-weight: bold;
-    font-size: 15px;
+    color: #4b0505;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-}
 
-.icon span {
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
-    font-size: 16px;
-}
 
-.icon img {
-    width: 20px;
-    margin-right: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* view btn */
 .view-btn-section {
@@ -308,7 +312,6 @@ footer {
         margin: 0 40px;
     }
 
-
     main {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -326,15 +329,8 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .item-btn {
-        width: 120px;
 
-        font-size: 18px;
-    }
 
-    .item-title {
-        font-size: 18px;
-    }
 
     .footer-link {
         display: flex;
